@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Cards</title>
+</head>
+<style>
+    body {
+        background-color: #503815;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .search {
+        margin-top: 5rem;
+        text-align: center;
+    }
+    #pokeName {
+        border-radius: 5px;
+    }
+    .pokeCard {
+        width: 18rem;
+        background-color: #f6d26d;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 3rem;
+        display:none;
+    }
+    .cardName {
+        background-color: white;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin: auto;
+        width: 12rem;
+    }
+
+    .stats {
+        font-size: 12px;
+    }
+
+    .image {
+        border: 0.5rem solid white;
+        border-radius: 50%;
+        width: fit-content;
+        display: flex;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    h5 {
+        border-bottom: 5px solid white;
+        width: fit-content;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .flex {
+        display: flex;
+        line-height: 1px;
+        margin: 0 4rem;
+        justify-content: space-between;
+    }
+
+    .ability1, .ability2 {
+        text-align: center;
+    }
+
+    .ability2{
+     padding-bottom: 2rem;
+    }
+
+    .error{
+        color: white;
+        text-align: center;
+        display: none;
+    }
+
+</style>
+<body>
+    <div class="search">
+        <input type="text" id="pokeName" class="p" placeholder="Type the name of a Pokemon">
+        <button type="submit" for="pokeName">SEARCH</button>
+    </div>
+    <p class="error"></p>
+    <div class="pokeCard">
+        <div class="cardName"></div>
+        <div class="image">
+            <img src="" alt="" />
+        </div>
+        
+        <h5>Stats</h5>
+        <div class="flex">
+            <p class="stats">Hp</p>
+            <p class="stats hp"></p>
+        </div>
+        <div class="flex">
+            <p class="stats">Attack</p>
+            <p class="stats attack"></p>
+        </div>
+        <div class="flex">
+            <p class="stats">Defence</p>
+            <p class="stats defence"></p>
+        </div>
+        <div class="flex">
+            <p class="stats">Defence</p>
+            <p class="stats sp-attack"></p>
+        </div>
+        <div class="flex">
+            <p class="stats">Special-Defence</p>
+            <p class="stats sp-defence"></p>
+        </div>
+        <div class="flex">
+            <p class="stats">Speed</p>
+            <p class="stats speed"></p>
+        </div>
+        <h5>Abilities</h5>
+        <div>
+          <p class="ability1 stats"></p>
+          <p class="ability2 stats"></p>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
